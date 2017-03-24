@@ -1,0 +1,18 @@
+PMsystem
+PMgraphism
+mv file secserv_lnbnnb002_vehiculetrainfreightdoubledecker_industrialtransportation.zip Q1LRSQ EBB0 <-- Q2LLSQ EBB0
+ct file secserv_lnbnnb002_vehiculetrainfreightdoubledecker_industrialtransportation.zip at Q1LRSQ EBB0
+sw IBSQ9B1Q1 <-- Q2LLSQ EBB0
+sw EBSQ9B1Q1 <-- IBSQ9B1Q1
+sw Q2TLSQ <-- IBSQ9B1Q1
+sw Q2TRSQ <-- Q2TLSQ
+sw Q1TLSQ <-- Q2TRSQ
+sw Q1TLSQ --> EBSQ1B0Q1
+sw EBSQ1B0Q1 --> IBSQ1B0Q1
+sw IBSQ1B0Q1 --> Q1LRSQ EBB0
+pe file secserv_lnbnnb002_vehiculetrainfreightdoubledecker_industrialtransportation.zip at Q1LRSQ EBB0
+PMmenu
+rd bn exit
+PMexit
+if another file = ud file pos prev --> curr
+if else = sc file secserv_lnbnnb002_vehiculetrainfreightdoubledecker_industrialtransportation.zip
